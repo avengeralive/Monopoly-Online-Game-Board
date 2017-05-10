@@ -1,0 +1,379 @@
+body
+{
+	margin:0px;
+	font-family: Georgia;
+	background: #000;
+}
+.game-board
+{
+	display: block;
+	position: relative;
+	margin-top: 20px;
+	margin-left: 20px;
+	background: url('../images/back.png');
+	float: left;
+}
+.stats
+{
+	display: block;
+	position: relative;
+	margin-top: 20px;
+	float: left;
+}
+.cell
+{
+	position: absolute;
+	padding: 2px;
+	overflow: hidden;
+}
+.cell p
+{
+	font-size: 11px;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	margin: 0px;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	text-transform: uppercase;
+}
+.name, .towerimg
+{
+	position: relative;
+	float: left;
+	display: block;
+}
+.color
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 100;
+}
+.cellinner
+{
+	position: relative;
+	float: left;
+	overflow: hidden;
+	z-index: 2;
+}
+.upcover
+{
+	background: rgba(0, 0, 0, .7);
+	display: block;
+	float: left;
+}
+.cell .color
+{
+	background: none;
+}
+.cellbg
+{
+	position: relative;
+	border: 2px solid #ccc;
+}
+.tower
+{
+	position: absolute;
+	/*background: url('../images/night.png');*/
+}
+.rtl, .rtr, .rbl, .rbr
+{
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	border: 2px solid #ccc;
+	border-radius: 100%;
+	z-index: 1;
+	background: #ead8c2;
+}
+.rtl
+{
+	top: -7px;
+	left: -7px;
+}
+.rtr
+{
+	top: -7px;
+	right: -7px;
+}
+.rbl
+{
+	bottom: -7px;
+	left: -7px;
+}
+.rbr
+{
+	bottom: -7px;
+	right: -7px;
+}
+.cell .upcover
+{
+	background-size: cover !important;
+}
+.cell .cellbg
+{
+	background: #313131;
+}
+#d5 .cellbg, #d7 .cellbg, #d7 .cellbg, #d11 .cellbg, #d14 .cellbg, #d17 .cellbg, #d20 .cellbg, #d25 .cellbg, #d28 .cellbg
+{
+	background: #6a6a6a;
+}
+#d5 p, #d7 p, #d7 p, #d11 p, #d14 p, #d17 p, #d20 p, #d25 p, #d28 p
+{
+	padding-top: 5px;
+}
+#d5 .upcover, #d7 .upcover, #d7 .upcover, #d11 .upcover, #d14 .upcover, #d17 .upcover, #d20 .upcover, #d25 .upcover, #d28 .upcover
+{
+	margin-top: 5px;
+}
+#d1 .cellbg
+{
+	background: url('../images/start.png');
+}
+#d1 .upcover
+{
+	background: none !important;
+}
+#d1 p
+{
+	font-size: 15px;
+}
+#d2 .upcover
+{
+	background: url('../images/santyago.png');
+}
+#d3 .upcover
+{
+	background: url('../images/bogota.png');
+}
+#d4 .upcover
+{
+	background: url('../images/brazilia.png');
+}
+#d5 .upcover
+{
+	background: url('../images/work.png');
+}
+#d6 .upcover
+{
+	background: url('../images/mexico.png');
+}
+#d7 .upcover
+{
+	background: url('../images/market.png');
+}
+#d8 .upcover
+{
+	background: url('../images/hanoi.png');
+}
+#d9 .upcover
+{
+	background: url('../images/newdelie.png');
+}
+#d10 .upcover
+{
+	background: url('../images/oslo.png');
+}
+#d11 .upcover
+{
+	background: url('../images/work.png');
+}
+#d12 .upcover
+{
+	background: url('../images/kanbera.png');
+}
+#d13 .upcover
+{
+	background: url('../images/warsaw.png');
+}
+#d14 .upcover
+{
+	background: url('../images/market.png');
+}
+#d15 .upcover
+{
+	background: url('../images/amsterdam.png');
+}
+#d16 .upcover
+{
+	background: url('../images/afini.png');
+}
+#d17 .upcover
+{
+	background: url('../images/work.png');
+}
+#d18 .upcover
+{
+	background: url('../images/berlin.png');
+}
+#d19 .upcover
+{
+	background: url('../images/madrid.png');
+}
+#d20 .upcover
+{
+	background: url('../images/market.png');
+}
+#d21 .upcover
+{
+	background: url('../images/tokio.png');
+}
+#d22 .upcover
+{
+	background: url('../images/paris.png');
+}
+#d23 .upcover
+{
+	background: url('../images/bern.png');
+}
+#d24 .upcover
+{
+	background: url('../images/rome.png');
+}
+#d25 .upcover
+{
+	background: url('../images/work.png');
+}
+#d26 .upcover
+{
+	background: url('../images/pekin.png');
+}
+#d27 .upcover
+{
+	background: url('../images/london.png');
+}
+#d28 .upcover
+{
+	background: url('../images/market.png');
+}
+.gamesettings
+{
+	width: 80%;
+	float: left;
+	display: block;
+	margin-left: 50px;
+}
+.scales
+{
+	width: 80%;
+	float: left;
+	display: block;
+}
+.scales>div
+{
+	width: 100%;
+	float: left;
+	display: block;
+	margin-left: 10%;
+	margin-top: 20px;
+	position: relative;
+}
+.card
+{
+	width: 90px;
+	height: 90px;
+	float: left;
+	display: block;
+}
+.card p
+{
+	text-align: center;
+	margin-top: 38px;
+	font-size: 12px;
+}
+.scale
+{
+	width: calc(100% - 120px);
+	height: 90px;
+	float: left;
+	display: block;
+	padding-left: 30px;
+}
+#red .card, #b_red .card
+{
+	background: url('../images/f_red.png');
+	background-size: cover;
+}
+#green .card, #b_green .card
+{
+	background: url('../images/f_green.png');
+	background-size: cover;
+}
+#gold .card, #b_gold .card
+{
+	background: url('../images/f_gold.png');
+	background-size: cover;
+}
+#purple .card, #b_purple .card
+{
+	background: url('../images/f_purple.png');
+	background-size: cover;
+}
+#blue .card, #b_blue .card
+{
+	background: url('../images/f_blue.png');
+	background-size: cover;
+}
+#b_red, #b_blue, #b_purple, #b_gold, #b_green
+{
+	position: absolute;
+}
+.delim
+{
+	height: 35px;
+	float: left;
+	display: block;
+	margin: 1px;
+	margin-top: 30px;
+	background: #666666;
+	border: 1px solid #666666;
+}
+#red .act
+{
+	background: #fff !important;
+	border: 1px solid #ad0012;
+	box-shadow: 1px #ad0012;
+}
+#blue .act
+{
+	background: #fff !important;
+	border: 1px solid #0070ab;
+	box-shadow: 1px #0070ab;
+}
+#gold .act
+{
+	background: #fff !important;
+	border: 1px solid #bd9353;
+	box-shadow: 1px #bd9353;
+}
+#purple .act
+{
+	background: #fff !important;
+	border: 1px solid #9d00ad;
+	box-shadow: 1px #9d00ad;
+}
+#green .act
+{
+	background: #fff !important;
+	border: 1px solid #008741;
+	box-shadow: 1px #008741;
+}
+.coin
+{
+	position: absolute;
+	z-index: 1000;
+}
+#logo
+{
+	position: absolute;
+}
+.gamesettings>div
+{
+	display: none;
+}
+.gamesettings 
+{
+	height: 50px;
+}

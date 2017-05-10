@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<link rel="stylesheet" href="css/style2.css">
+	</head>
+	<body>
+		<div class="perc50">
+			<button id="new">Новая игра</button>
+			<div class="gamesettings">
+				<select id="gamelist">
+					<option value="0">Выберите игру</option>
+				</select>
+				<button id="init2">Привязать игру</button>
+			</div>
+			<table>
+				<tr>
+					<td>Сантьяго</td>
+					<td><input type="text" id="f_d2"></td>
+					<td>Афины</td>
+					<td><input type="text" id="f_d16"></td>
+				</tr>
+				<tr>
+					<td>Богота</td>
+					<td><input type="text" id="f_d3"></td>
+					<td>Берлин</td>
+					<td><input type="text" id="f_d18"></td>
+				</tr>
+				<tr>
+					<td>Бразилиа</td>
+					<td><input type="text" id="f_d4"></td>
+					<td>Мадрид</td>
+					<td><input type="text" id="f_d19"></td>
+				</tr>
+				<tr>
+					<td>Мехико</td>
+					<td><input type="text" id="f_d6"></td>
+					<td>Токио</td>
+					<td><input type="text" id="f_d21"></td>
+				</tr>
+				<tr>
+					<td>Ханои</td>
+					<td><input type="text" id="f_d8"></td>
+					<td>Париж</td>
+					<td><input type="text" id="f_d22"></td>
+				</tr>
+				<tr>
+					<td>Нью-Дели</td>
+					<td><input type="text" id="f_d9"></td>
+					<td>Берн</td>
+					<td><input type="text" id="f_d23"></td>
+				</tr>
+				<tr>
+					<td>Осло</td>
+					<td><input type="text" id="f_d10"></td>
+					<td>Рим</td>
+					<td><input type="text" id="f_d24"></td>
+				</tr>
+				<tr>
+					<td>Канбера</td>
+					<td><input type="text" id="f_d12"></td>
+					<td>Пекин</td>
+					<td><input type="text" id="f_d26"></td>
+				</tr>
+				<tr>
+					<td>Варшава</td>
+					<td><input type="text" id="f_d13"></td>
+					<td>Лондон</td>
+					<td><input type="text" id="f_d27"></td>
+				</tr>
+				<tr>
+					<td>Амстердам</td>
+					<td><input type="text" id="f_d15"></td>
+					<td>Цель игры</td>
+					<td><input type="text" id="goal"></td>
+				</tr>
+				<tr>
+					<td>Число игроков</td>
+					<td>
+						<select id="players">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+			<button class="applyprice">Сохранить</button>
+		</div>
+		<div class="perc50">
+			<table>
+				<tr>
+					<td>
+						<select id="team_name">
+							<option class="red" value="red">Red</option>
+							<option class="gold" value="gold">Gold</option>
+							<option class="purple" value="purple">Purple</option>
+							<option class="blue" value="blue">Blue</option>
+							<option class="green" value="green">Green</option>
+						</select>
+					</td>
+					<td>
+						<select id="move">
+							<option value="next">Вперёд</option>
+							<option value="prev">Назад</option>
+						</select>
+					</td>
+					<td>
+						<input type="text" id="countity">
+					</td>
+					<td>
+						<button class="applymove">Сохранить</button>
+					</td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td>
+						<select id="team_name1">
+							<option class="red" value="red">Red</option>
+							<option class="gold" value="gold">Gold</option>
+							<option class="purple" value="purple">Purple</option>
+							<option class="blue" value="blue">Blue</option>
+							<option class="green" value="green">Green</option>
+						</select>
+					</td>
+					<td>
+						<select id="cityname">
+							<option value="2">Сантьяго</option>
+							<option value="3">Богота</option>
+							<option value="4">Бразилиа</option>
+							<option value="6">Мехико</option>
+							<option value="8">Ханои</option>
+							<option value="9">Нью-Дели</option>
+							<option value="10">Осло</option>
+							<option value="12">Канбера</option>
+							<option value="13">Варшава</option>
+							<option value="15">Амстердам</option>
+							<option value="16">Афины</option>
+							<option value="18">Берлин</option>
+							<option value="19">Мадрид</option>
+							<option value="21">Токио</option>
+							<option value="22">Париж</option>
+							<option value="23">Берн</option>
+							<option value="24">Рим</option>
+							<option value="26">Пекин</option>
+							<option value="27">Лондон</option>
+						</select>
+					</td>
+					<td>
+						<button class="buycity">Купить город</button>
+					</td>
+				</tr>
+			</table>
+			
+			<table>
+				<tr>
+					<td>
+						<select id="team_name2">
+							<option class="red" value="red">Red</option>
+							<option class="gold" value="gold">Gold</option>
+							<option class="purple" value="purple">Purple</option>
+							<option class="blue" value="blue">Blue</option>
+							<option class="green" value="green">Green</option>
+						</select>
+					</td>
+					<td>
+						<input type="text" id="countity2">
+					</td>
+					<td>
+						<button class="applymove2">Добавить деньги</button>
+					</td>
+				</tr>
+			</table>
+			
+			<table>
+				<tr>
+					<td>
+						<select id="team_name3">
+							<option class="red" value="red">Red</option>
+							<option class="gold" value="gold">Gold</option>
+							<option class="purple" value="purple">Purple</option>
+							<option class="blue" value="blue">Blue</option>
+							<option class="green" value="green">Green</option>
+						</select>
+					</td>
+					<td>
+						<input type="text" id="countity3">
+					</td>
+					<td>
+						<button class="applymove3">Забрать деньги</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
